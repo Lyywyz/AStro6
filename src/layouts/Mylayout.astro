@@ -1,0 +1,33 @@
+---
+import Navigationbar from "../components/NavigationBar.astro";
+import Footer from "../components/Footer.astro";
+import NavigationBar from "../components/NavigationBar.astro";
+const {title} = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="lmcj">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body>
+    <main>
+  <NavigationBar />
+   <slot /> 
+    <Footer />
+    </main>
+</html>
+<style>
+   body {
+     background-color: black;
+     color:white;
+     width:800px;
+     }
+    main (
+    width:800px;
+    margin:2em,3em；
+    )
+   
+</style>
